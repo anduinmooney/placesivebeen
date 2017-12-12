@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Locations I've been</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Places I've Been</h1>
+
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Add a Location:</h2>
+          <form id="new-contact">
+            <div class="form-group">
+              <label for="place-name">Name of Location</label>
+              <input type="text" class="form-control" id="place-name">
+            </div>
+            <div class="form-group">
+              <label for="date1">Date of Arrival:</label>
+              <input id="date1" class="form-control" type="date">
+            </div>
+            <div class="form-group">
+              <label for="date2">Date of Departure:</label>
+              <input id="date2" class="form-control" type="date">
+            </div>
+            <div class="form-group">
+              <label for="picture">Location Notes</label>
+              <br>
+              <textarea name="Text1" cols="40" rows="5" id="notes"></textarea>
+
+
+            </div>
+            <button type="submit" class="btn">Add Location</button>
+          </form>
+
+          <h2>Locations Visited:</h2>
+          <ul id="contacts">
+
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <div id="show-contact">
+            <h2></h2>
+            <p>Location Name: <span class="place-name"></span></p>
+            <p>Date of Arrival: <span class="dateOfArrival"></span></p>
+            <p>Date of Departure: <span class="dateOfDeparture"></span></p>
+            <p>Notes: <span class="userNotes"></span></p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
